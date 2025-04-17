@@ -72,7 +72,25 @@ section img {
     margin: 10px auto;
     max-width: 100%;
     height: auto;
+    max-width: 200px;
+}
+
+nav ul li a:hover {
+    color: #6a0dad;  /* Change to any color you like */
+}
+
+
+footer i {
+    margin: 0 10px;
+    cursor: pointer;
+}
+footer i:hover {
+    color: #6a0dad;
 }
 
 
 
+
+section {
+    margin-bottom: 40px;
+}
