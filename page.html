@@ -3,24 +3,30 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alessio's Pizzaria</title>
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <link rel="stylesheet" href="C.css">
+    <link rel="stylesheet" href="C.css" />
 </head>
 
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href=""><strong>Home</strong></a></li>
-                <li><a href="#parte1"><strong>Cardápio</strong></a></li>
-                <li><a href="#parte2"><strong>Sobre nós</strong></a></li>
-                <li><a href="#parte3"><strong>Contato</strong></a></li>
-                <li><img src="roblox.jpeg" alt="Roblox Pizza" width="50" height="50"></li>
-
+                <li>
+                    <a href=""><strong>Home</strong></a>
+                </li>
+                <li>
+                    <a href="#parte1"><strong>Cardápio</strong></a>
+                </li>
+                <li>
+                    <a href="#parte2"><strong>Sobre nós</strong></a>
+                </li>
+                <li>
+                    <a href="#parte3"><strong>Contato</strong></a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -35,34 +41,50 @@
         <h2>Cardápio</h2>
 
         <h3>Pizzas salgadas</h3>
+        <ul>
+            <p>Pizza de queijo</p>
+            <img src="pizzaquijo.jpg" alt="Pizza de queijo" width="150" height="150" />
+        </ul>
 
-        <p>Pizza de queijo</p>
-        <img src="pizzaquijo.jpg" alt="Pizza de queijo" width="150" height="150">
+        <ul>
+            <p>Pizza de calabresa</p>
+            <img src="pizzacalabresa.jpeg" alt="Pizza de calabresa" width="150" height="150" />
 
-        <p>Pizza de calabresa</p>
-        <img src="pizzacalabresa.jpeg" alt="Pizza de calabresa" width="150" height="150">
+        </ul>
 
-        <p>Pizza de strogonoff</p>
-        <img src="pizzastrogonoff.jpg" alt="Pizza de strogonoff" width="150" height="150">
+        <ul>
+            <p>Pizza de strogonoff</p>
+            <img src="pizzastrogonoff.jpg" alt="Pizza de strogonoff" width="150" height="150" />
+        </ul>
 
-        <p>Pizza de tomate seco</p>
-        <img src="pizzatomateseco.jpg" alt="Pizza de tomate seco" width="150" height="150">
+        <ul>
+            <p>Pizza de tomate seco</p>
+            <img src="pizzatomateseco.jpg" alt="Pizza de tomate seco" width="150" height="150" />
+        </ul>
 
         <h3>Pizzas doces</h3>
 
-        <p>Pizza de chocolate</p>
-        <img src="pizzachocolate.jpg" alt="Pizza de chocolate" width="150" height="150">
+        <ul>
+            <p>Pizza de chocolate</p>
+            <img src="pizzachocolate.jpg" alt="Pizza de chocolate" width="150" height="150" />
+        </ul>
 
         <h3>Sobremesas</h3>
 
-        <p>Musse de maracujá</p>
-        <img src="mussemara.jpg" alt="Musse de maracujá" width="150" height="150">
+        <ul>
+            <p>Musse de maracujá</p>
+            <img src="mussemara.jpg" alt="Musse de maracujá" width="150" height="150" />
+        </ul>
 
         <h3>bebidas</h3>
 
-        <p>Sucos</p>
-        <img src="sucos.jpg" alt="Sucos" width="150" height="150">
-        <p>Suco de laranja, maçã, abacaxi, limão, amora, uva, acerola, melancia</p>
+        <ul>
+            <p>Sucos</p>
+            <img src="sucos.jpg" alt="Sucos" width="150" height="150" />
+            <p>
+                Suco de laranja, maçã, abacaxi, limão, amora, uva, acerola, melancia
+            </p>
+        </ul>
 
     </section>
 
@@ -74,20 +96,22 @@
     <section id="parte3" class="container">
         <h2>Contato</h2>
         <form>
-            <label for="nome">Nome:</label><br>
-            <input type="text" id="nome" name="nome"><br><br>
+            <label for="nome">Nome:</label><br />
+            <input type="text" id="nome" name="nome" /><br /><br />
 
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email"><br><br>
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" name="email" /><br /><br />
 
-            <label for="mensagem">Mensagem:</label><br>
-            <textarea id="mensagem" name="mensagem"></textarea><br><br>
+            <label for="mensagem">Mensagem:</label><br />
+            <textarea id="mensagem" name="mensagem"></textarea><br /><br />
 
             <button type="submit">Enviar</button>
         </form>
     </section>
 
-    <script>feather.replace();</script>
+    <script>
+        feather.replace();
+    </script>
 
     <footer>
         <i data-feather="github"></i>
