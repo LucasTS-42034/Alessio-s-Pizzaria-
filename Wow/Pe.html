@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ultimate Game About Games About Games</title>
+  <link rel="stylesheet" href="ele.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Welcome to the Ultimate Game About Games About Games!</h1>
+    <p>Click the button below to enter a world of endless games within games!</p>
+    <button class="game-button" onclick="startGame()">Start Game</button>
+    
+    <div id="progress-bar">
+      <div id="progress"></div>
+    </div>
+
+    <!-- Game Levels -->
+    <div class="game-level" id="level1">
+      <h2>Level 1: Game about games</h2>
+      <button class="game-button" onclick="nextLevel(2)">Go to Game About Games About Games</button>
+      <div class="enemy" id="enemy1" onclick="fightEnemy(1)"></div>
+    </div>
+
+    <div class="game-level" id="level2">
+      <h2>Level 2: Game about games about games</h2>
+      <button class="game-button" onclick="nextLevel(3)">Go to Game About Games About Games About Games</button>
+      <div class="enemy" id="enemy2" onclick="fightEnemy(2)"></div>
+    </div>
+
+    <div class="game-level" id="level3">
+      <h2>Level 3: Game about games about games about games</h2>
+      <button class="game-button" onclick="nextLevel(4)">Go to Game About Games About Games About Games About Games</button>
+      <div class="enemy" id="enemy3" onclick="fightEnemy(3)"></div>
+    </div>
+
+    <div class="game-level" id="level4">
+      <h2>Final Level: Congratulations, you've reached the end!</h2>
+    </div>
+
+    <!-- Dialogue Box -->
+    <div id="dialogue-box"></div>
+    <div id="choices"></div>
+    
+    <!-- Player Stats -->
+    <div id="player-stats">
+      <p>Level: <span id="level"></span></p>
+      <p>Health: <span id="health"></span></p>
+      <p>Attack: <span id="attack"></span></p>
+    </div>
+    
+    <!-- Save/Load buttons -->
+    <button onclick="saveGame()">Save Game</button>
+    <button onclick="loadGame()">Load Game</button>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
