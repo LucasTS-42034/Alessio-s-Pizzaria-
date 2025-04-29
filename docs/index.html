@@ -1,127 +1,177 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
+  <head>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alessio's Pizzaria</title>
     <link rel="stylesheet" href="C.css" />
     <script src="https://unpkg.com/feather-icons"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#"><strong>Home</strong></a></li>
-                <li><a href="#parte1"><strong>Cardápio</strong></a></li>
-                <li><a href="#parte2"><strong>Sobre nós</strong></a></li>
-                <li><a href="#parte3"><strong>Contato</strong></a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li>
+            <a href="#"><strong>Home</strong></a>
+          </li>
+          <li>
+            <a href="#parte1"><strong>Cardápio</strong></a>
+          </li>
+          <li>
+            <a href="#parte2"><strong>Sobre nós</strong></a>
+          </li>
+          <li>
+            <a href="#parte3"><strong>Contato</strong></a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <section class="intro">
-        <h1>Bem-vindos à Alessio's Pizzaria!</h1>
-        <h2>Vendemos pizzas saborosas!</h2>
-        <a href="#parte1"><button aria-label="Ver cardápio completo">Ver Cardápio</button></a>
+      <h1>Bem-vindos à Alessio's Pizzaria!</h1>
+      <h2>Vendemos pizzas saborosas!</h2>
+      <a href="#parte1"
+        ><button aria-label="Ver cardápio completo">Ver Cardápio</button></a
+      >
     </section>
 
     <section id="parte1" class="container">
-        <h2>Cardápio</h2>
+      <h2>Cardápio</h2>
 
-        <h3>Pizzas Salgadas</h3>
-        <div class="cardapio-grid">
-            <div class="cardapio-item">
-                <img src="pizzaquijo.jpg" alt="Pizza de queijo" />
-                <p>Pizza de Queijo</p>
-                <p class="descricao">Molho de tomate, mussarela de leite, queijo provolone e parmesão.</p>
-            </div>
-            <div class="cardapio-item">
-                <img src="pizzacalabresa.jpeg" alt="Pizza de calabresa" />
-                <p>Pizza de Calabresa</p>
-                <p class="descricao">Calabresa fatiada, molho de tomate, cebola roxa e azeitonas.</p>
-            </div>
-            <div class="cardapio-item">
-                <img src="pizzastrogonoff.jpg" alt="Pizza de strogonoff" />
-                <p>Pizza de Strogonoff</p>
-                <p class="descricao">Frango desfiado, molho strogonoff, queijo e batata palha.</p>
-            </div>
-            <div class="cardapio-item">
-                <img src="pizzatomateseco.jpg" alt="Pizza de tomate seco" />
-                <p>Pizza de Tomate Seco</p>
-                <p class="descricao">Tomate seco, rúcula, azeite de oliva e parmesão.</p>
-            </div>
-            <div class="cardapio-item">
-                <img src="pizzaportuguesa.jpg" alt="Pizza portuguesa" />
-                <p>Pizza Portuguesa</p>
-                <p class="descricao">Presunto, ovo, azeitonas, cebola e molho de tomate.</p>
-            </div>
-            <div class="cardapio-item">
-                <img src="pizzalombo.jpeg" alt="Pizza de lombo canadense" />
-                <p>Pizza de Lombo Canadense</p>
-                <p class="descricao">Lombo canadense, queijo muçarela e molho barbecue.</p>
-            </div>
+      <h3>Pizzas Salgadas</h3>
+      <div class="cardapio-grid">
+        <div class="cardapio-item">
+          <img src="pizzaquijo.jpg" alt="Pizza de queijo" />
+          <p>Pizza de Queijo</p>
+          <p class="descricao">
+            Molho de tomate, mussarela de leite, queijo provolone e parmesão.
+          </p>
         </div>
+        <div class="cardapio-item">
+          <img src="pizzacalabresa.jpeg" alt="Pizza de calabresa" />
+          <p>Pizza de Calabresa</p>
+          <p class="descricao">
+            Calabresa fatiada, molho de tomate, cebola roxa e azeitonas.
+          </p>
+        </div>
+        <div class="cardapio-item">
+          <img src="pizzastrogonoff.jpg" alt="Pizza de strogonoff" />
+          <p>Pizza de Strogonoff</p>
+          <p class="descricao">
+            Frango desfiado, molho strogonoff, queijo e batata palha.
+          </p>
+        </div>
+        <div class="cardapio-item">
+          <img src="pizzatomateseco.jpg" alt="Pizza de tomate seco" />
+          <p>Pizza de Tomate Seco</p>
+          <p class="descricao">
+            Tomate seco, rúcula, azeite de oliva e parmesão.
+          </p>
+        </div>
+        <div class="cardapio-item">
+          <img src="pizzaportuguesa.jpg" alt="Pizza portuguesa" />
+          <p>Pizza Portuguesa</p>
+          <p class="descricao">
+            Presunto, ovo, azeitonas, cebola e molho de tomate.
+          </p>
+        </div>
+        <div class="cardapio-item">
+          <img src="pizzalombo.jpeg" alt="Pizza de lombo canadense" />
+          <p>Pizza de Lombo Canadense</p>
+          <p class="descricao">
+            Lombo canadense, queijo muçarela e molho barbecue.
+          </p>
+        </div>
+      </div>
 
-        <h3>Pizzas Doces</h3>
-        <div class="cardapio-grid">
-            <div class="cardapio-item">
-                <img src="pizzachocolate.jpg" alt="Pizza de chocolate" />
-                <p>Pizza de Chocolate</p>
-                <p class="descricao">Chocolate meio amargo, leite condensado e morangos frescos.</p>
-            </div>
-            <div class="cardapio-item">
-                <img src="pizzaRomeu.jpg" alt="Pizza Romeu e Julieta" />
-                <p>Pizza Romeu e Julieta</p>
-                <p class="descricao">Goibada, queijo minas e mel.</p>
-            </div>
+      <h3>Pizzas Doces</h3>
+      <div class="cardapio-grid">
+        <div class="cardapio-item">
+          <img src="pizzachocolate.jpg" alt="Pizza de chocolate" />
+          <p>Pizza de Chocolate</p>
+          <p class="descricao">
+            Chocolate meio amargo, leite condensado e morangos frescos.
+          </p>
         </div>
+        <div class="cardapio-item">
+          <img src="pizzaRomeu.jpg" alt="Pizza Romeu e Julieta" />
+          <p>Pizza Romeu e Julieta</p>
+          <p class="descricao">Goibada, queijo minas e mel.</p>
+        </div>
+      </div>
 
-        <h3>Bebidas</h3>
-        <div class="cardapio-grid">
-            <div class="cardapio-item">
-                <img src="sucos.jpg" alt="Sucos variados" />
-                <p>Sucos de laranja, maçã, abacaxi, limão, amora, uva, acerola e melancia</p>
-            </div>
+      <h3>Bebidas</h3>
+      <div class="cardapio-grid">
+        <div class="cardapio-item">
+          <img src="sucos.jpg" alt="Sucos variados" />
+          <p>
+            Sucos de laranja, maçã, abacaxi, limão, amora, uva, acerola e
+            melancia
+          </p>
         </div>
+      </div>
     </section>
 
     <section id="parte2" class="container">
-        <h2>Sobre Nós</h2>
-        <p>Vendemos pizza! (Obviamente...)</p>
+      <h2>Sobre Nós</h2>
+      <p>Vendemos pizza! (Obviamente...)</p>
+
+      <h2>Envie sua sugestão de pizza!</h2>
+      <form>
+        <label for="fname">Tipo de pizza:</label><br />
+        <input type="text" id="fname" name="fname" /><br />
+        <label for="lname">Descrição da pizza:</label><br />
+        <input type="text" id="lname" name="lname" />
+        <h4>Ingredientes necessários:</h4>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Queijo" />
+        <label for="ingrediente1">Queijo</label><br />
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Molho de tomate" />
+        <label for="ingrediente2">Molho de tomate</label><br />
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Catupiry" />
+        <label for="ingrediente3">Catupiry</label><br /><br />
+        <label for="lname">Valor sugerido:</label><br />
+        <input type="text" id="lname" name="lname" />
+
+        <input type="submit" value="Enviar" />
+      </form>
     </section>
 
     <section id="parte3" class="container">
-        <h2>Contato</h2>
-        <p><strong>Endereço:</strong> Avenida Brasil, nº 543 - Centro, Rio de Janeiro - RJ, Brasil</p>
-        <p><strong>Telefone:</strong> (21) 1234-5678</p>
-        <p><strong>E-mail:</strong> contato@alessiospizzaria.com.br</p>
-        <p><strong>Horário de Funcionamento:</strong></p>
-        <ul>
-            <li>Segunda a Sexta: 11:00 - 23:00</li>
-            <li>Sábado: 12:00 - 00:00</li>
-            <li>Domingo: Fechado</li>
-        </ul>
+      <h2>Contato</h2>
+      <p>
+        <strong>Endereço:</strong> Avenida Brasil, nº 543 - Centro, Rio de
+        Janeiro - RJ, Brasil
+      </p>
+      <p><strong>Telefone:</strong> (21) 1234-5678</p>
+      <p><strong>E-mail:</strong> contato@alessiospizzaria.com.br</p>
+      <p><strong>Horário de Funcionamento:</strong></p>
+      <ul>
+        <li>Segunda a Sexta: 11:00 - 23:00</li>
+        <li>Sábado: 12:00 - 00:00</li>
+        <li>Domingo: Fechado</li>
+      </ul>
     </section>
 
     <footer>
-        <i data-feather="github" aria-label="GitHub"></i>
-        <i data-feather="trello" aria-label="Trello"></i>
-        <i data-feather="twitter" aria-label="Twitter"></i>
-        <i data-feather="youtube" aria-label="YouTube"></i>
-        <a href="https://instagram.com" target="_blank"><i data-feather="instagram"></i></a>
-        <i data-feather="facebook" aria-label="Facebook"></i>
-        <p>&copy; 2025 Alessio's Pizzaria. Nenhum direito reservado.</p>
+      <i data-feather="github" aria-label="GitHub"></i>
+      <i data-feather="trello" aria-label="Trello"></i>
+      <i data-feather="twitter" aria-label="Twitter"></i>
+      <i data-feather="youtube" aria-label="YouTube"></i>
+      <a href="https://instagram.com" target="_blank"
+        ><i data-feather="instagram"></i
+      ></a>
+      <i data-feather="facebook" aria-label="Facebook"></i>
+      <p>&copy; 2025 Alessio's Pizzaria. Nenhum direito reservado.</p>
     </footer>
 
     <script>
-        feather.replace();
+      feather.replace();
     </script>
-    
-</body>
-
+  </body>
 </html>
-
