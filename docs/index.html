@@ -123,22 +123,62 @@
       <p>Vendemos pizza! (Obviamente...)</p>
 
       <h2>Envie sua sugestão de pizza!</h2>
-      <form>
-        <label for="fname">Tipo de pizza:</label><br />
-        <input type="text" id="fname" name="fname" /><br />
-        <label for="lname">Descrição da pizza:</label><br />
-        <input type="text" id="lname" name="lname" />
-        <h4>Ingredientes necessários:</h4>
-        <input type="checkbox" id="vehicle1" name="vehicle1" value="Queijo" />
-        <label for="ingrediente1">Queijo</label><br />
-        <input type="checkbox" id="vehicle2" name="vehicle2" value="Molho de tomate" />
-        <label for="ingrediente2">Molho de tomate</label><br />
-        <input type="checkbox" id="vehicle3" name="vehicle3" value="Catupiry" />
-        <label for="ingrediente3">Catupiry</label><br /><br />
-        <label for="lname">Valor sugerido:</label><br />
-        <input type="text" id="lname" name="lname" />
+      <form class="sugestao-form">
+        <div class="form-group">
+          <label for="tipo-pizza">Tipo de pizza:</label><br />
+          <input
+            type="text"
+            id="tipo-pizza"
+            name="tipo-pizza"
+            placeholder="Ex: Pizza de Abacaxi"
+            required
+          />
+        </div>
 
-        <input type="submit" value="Enviar" />
+        <div class="form-group">
+          <label for="descricao-pizza">Descrição da pizza:</label><br />
+          <textarea
+            id="descricao-pizza"
+            name="descricao-pizza"
+            rows="3"
+            placeholder="Ingredientes, sabor, textura..."
+            required
+          ></textarea>
+        </div>
+
+        <fieldset class="form-group">
+          <legend>Ingredientes necessários:</legend>
+          <label
+            ><input type="checkbox" name="ingredientes" value="Queijo" />
+            Queijo</label
+          ><br />
+          <label
+            ><input
+              type="checkbox"
+              name="ingredientes"
+              value="Molho de tomate"
+            />
+            Molho de tomate</label
+          ><br />
+          <label
+            ><input type="checkbox" name="ingredientes" value="Catupiry" />
+            Catupiry</label
+          >
+        </fieldset>
+
+        <div class="form-group">
+          <label for="valor-sugerido">Valor sugerido (R$):</label><br />
+          <input
+            type="number"
+            id="valor-sugerido"
+            name="valor-sugerido"
+            step="0.01"
+            min="0"
+            placeholder="Ex: 45.90"
+          />
+        </div>
+
+        <button type="submit">Enviar</button>
       </form>
     </section>
 
